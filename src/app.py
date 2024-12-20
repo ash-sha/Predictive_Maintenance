@@ -6,7 +6,7 @@ import os
 import uuid  # To generate unique IDs
 
 # Load your data
-DATA_DIR = os.getenv("DATA_DIR", "/Users/aswathshakthi/PycharmProjects/MLOps/Predictive_maintenance/data/processed/df_train_processed.csv")
+DATA_DIR = os.getenv("DATA_DIR", "df_train_processed.csv")
 data = pd.read_csv(DATA_DIR)
 
 # Set up the page layout and logo
@@ -59,7 +59,7 @@ for idx, (description, min_value, max_value) in enumerate(sensor_descriptions_an
 
 # Define a function to call the API and get the prediction
 def get_prediction(input_data):
-    response = requests.post("http://0.0.0.0:8000/predict", json=input_data)
+    response = requests.post("https://predictive-maintenance-kegp.onrender.com/predict", json=input_data)
     if response.status_code == 200:
         result = response.json()
         return result['predicted_rul']
