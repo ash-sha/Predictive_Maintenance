@@ -1,0 +1,7 @@
+.idea
+.venv1
+.*
+data
+notebooks
+references
+reports
