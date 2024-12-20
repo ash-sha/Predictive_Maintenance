@@ -98,4 +98,4 @@ The data are provided as a zip-compressed text file with 26 columns of numbers, 
 
 
 ##### Docker image: aswaths/predictive_maintenance:v1
-##### Streamlit : https://predictivemaintenances.streamlit.app
+##### Streamlit : https://predictivemaintenancet.streamlit.app
