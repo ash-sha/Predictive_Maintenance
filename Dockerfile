@@ -28,4 +28,4 @@ ENV DATA_DIR=/app/data/processed/df_train_processed.csv
 EXPOSE 8000
 
 # Run the application (for example, FastAPI)
-ENTRYPOINT ["python","src/main.py"]
+ENTRYPOINT ["python","main.py"]
