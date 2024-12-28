@@ -1,4 +1,4 @@
-### Predictive Maintenance of NASA's Aircraft Turbo Engine
+### Predictive Maintenance for NASA Aircraft Engines
 
 This project focuses on predictive maintenance for aircraft turbo engines, utilizing machine learning models like XGBoost and Random Forest. The objective is to predict the Remaining Useful Life (RUL) of engines based on historical sensor data, achieving an accuracy of approximately 80%.  All the codes are written and executed within Jupyter notebooks.
 
