@@ -1,5 +1,9 @@
 ### Predictive Maintenance of NASA's Aircraft Turbo Engine
 
+This project focuses on predictive maintenance for aircraft turbo engines, utilizing machine learning models like XGBoost and Random Forest. The objective is to predict the Remaining Useful Life (RUL) of engines based on historical sensor data, achieving an accuracy of approximately 80%.  All the codes are written and executed within Jupyter notebooks.
+
+Once the models were trained and evaluated, the deployment was handled using FastAPI for serving the model, Docker for containerization, and Streamlit for interactive visualization. The project is deployed using Render, enabling efficient scaling and access. The focus of this MLOps approach is on seamless model deployment and interaction.
+
 #### Project Organization
 
 ```
@@ -11,25 +15,10 @@
 │   ├── interim           <- Intermediate data that has been transformed.  
 │   ├── processed         <- The final, canonical datasets for modeling.  
 │   └── raw               <- The original, immutable data dump.  
-├── docs                  <- A default Sphinx project; see sphinx-doc.org for details.  
 ├── models                <- Trained and serialized models, model predictions, or model summaries.  
 ├── notebooks             <- Jupyter notebooks for analysis and model development.  
-├── references            <- Data dictionaries, manuals, and other explanatory materials.  
-├── reports               <- Generated analysis as HTML, PDF, LaTeX, etc.  
-│   └── figures           <- Generated graphics and figures to be used in reporting.  
-├── requirements.txt      <- Requirements for reproducing the analysis environment.  
-├── setup.py              <- Makes the project pip installable for easy module imports.  
-├── src                   <- Source code for use in this project.  
-│   ├── __init__.py       <- Makes src a Python module.  
-│   ├── data              <- Scripts to download or generate data.  
-│   │   └── make_dataset.py  
-│   ├── features          <- Scripts to generate features for modeling.  
-│   │   └── build_features.py  
-│   ├── models            <- Scripts to train models and make predictions.  
-│   │   ├── predict_model.py  
-│   │   └── train_model.py  
-│   └── visualization     <- Scripts for exploratory and results-oriented visualizations.  
-│       └── visualize.py  
+├── references            <- Data dictionaries, manuals, and other explanatory materials.    
+├── requirements.txt      <- Requirements for reproducing the analysis environment. 
 ```
 
 ---
@@ -80,3 +69,4 @@ Each dataset contains 26 columns, with data for unit number, time (in cycles), o
 
 - **Docker Image**: `aswaths/predictive_maintenance:v1`
 - **Streamlit App**: [Predictive Maintenance Streamlit App](https://predictivemaintenancet.streamlit.app)
+
